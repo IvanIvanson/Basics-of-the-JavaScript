@@ -112,10 +112,10 @@ alert (mathOperation(4, 8, "+"));
  
  */
 function putDeposit() {
-let depositSum = +prompt("Введите сумму которую надо положить на счет");
-if (depositSum % 10==0 || depositSum % 10==5 || depositSum % 10==6 || depositSum % 10==7 || depositSum % 10==8 || depositSum % 10==9 ||  (depositSum > 10 && depositSum < 21)){
+let depositSum = prompt("Введите сумму которую надо положить на счет");
+if (depositSum % 10==0 || depositSum % 10==5 || depositSum % 10==6 || depositSum % 10==7 || depositSum % 10==8 || depositSum % 10==9 ||  (depositSum > 10 && depositSum < 21) || ((depositSum.length >=3)&& depositSum.charAt(depositSum.length - 2)==1)) {
     alert(`Ваша сумма в ${depositSum} рублей успешно зачислена`)
-}else if (depositSum % 10==1){
+}else if (depositSum % 10==1 || ((depositSum.length >=3)&& depositSum.charAt(depositSum.length - 2)!==1)){
     alert(`Ваша сумма в ${depositSum} рубль успешно зачислена`)
 }else if ((depositSum > 1 && depositSum < 5) || depositSum % 10==2 || depositSum % 10==3 || depositSum % 10==3 || depositSum % 10==4){
     alert(`Ваша сумма в ${depositSum} рубля успешно зачислена`)
