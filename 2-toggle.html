@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: rgb(0, 255, 0);
+            text-decoration: none;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+    </ul>
+
+    <!-- Задание. Найдите элемент с классом .nav-link и используя метод toggle из свойства classList
+    у элемента, добавьте или уберите класс .active. -->
+</body>
+<script>
+    'use strict'
+    
+    let link = document.querySelector('.nav-link');
+    link.addEventListener('click', function(){
+    link.classList.toggle('active');
+    
+    });
+</script>
+</html>
