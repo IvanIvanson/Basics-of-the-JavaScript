@@ -23,10 +23,11 @@
          * @param {number} percent величина процента от 0 до 100.
          */
         function changeProgress(percent) {
+            let k = 50;
             for(let percent = 0; percent <= 100; percent++){
                 setTimeout(function(){
                     div.style.background = `linear-gradient(90deg, rgba(38,255,162,1) ${percent}%, rgba(255,255,255,1) ${percent}%)`;
-                }, percent)
+                }, percent*k);
            
 
             }
